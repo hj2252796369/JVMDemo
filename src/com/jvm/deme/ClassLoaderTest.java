@@ -26,7 +26,7 @@ public class ClassLoaderTest {
         ClassLoader classLoader = ClassLoaderTest.class.getClassLoader();
         System.out.println(classLoader);  // sun.misc.Launcher$AppClassLoader@18b4aac2
 
-        // 引导类加载器加载
+        // 引导类加载器加载   JAVA的核心类库都是引导类加载器进行加载的
         ClassLoader classLoader1 = String.class.getClassLoader();
         System.out.println(classLoader1); // null
 
