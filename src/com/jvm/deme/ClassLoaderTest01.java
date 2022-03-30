@@ -16,6 +16,13 @@ import java.net.URL;
 public class ClassLoaderTest01 {
     public static void main(String[] args) {
 
+
+        URL[] urls = Launcher.getBootstrapClassPath().getURLs();
+        for (URL url : urls) {
+            System.out.println(url);
+        }
+
+
         System.out.println("=============启动类加载器=============");
         URL[] urLs = Launcher.getBootstrapClassPath().getURLs();
         for (URL urL : urLs) {
